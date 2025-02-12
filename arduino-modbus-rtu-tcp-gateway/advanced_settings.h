@@ -5,7 +5,7 @@
 
 /****** FUNCTIONALITY ******/
 
-// #define ENABLE_EXTENDED_WEBUI  // Enable extended Web UI (additional items and settings), consumes FLASH memory
+#define ENABLE_EXTENDED_WEBUI  // Enable extended Web UI (additional items and settings), consumes FLASH memory
 // uncomment ENABLE_EXTENDED_WEBUI if you have a board with large FLASH memory (Arduino Mega)
 
 // #define ENABLE_DHCP  // Enable DHCP (Auto IP settings), consumes a lot of FLASH memory
