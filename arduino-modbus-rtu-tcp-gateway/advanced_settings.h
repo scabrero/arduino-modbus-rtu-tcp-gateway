@@ -55,7 +55,7 @@ const byte DEFAULT_ATTEMPTS = 3;                 // Default Attempts
 #define mySerial Serial1  // define serial port for RS485 interface, for Arduino Mega choose from Serial1, Serial2 or Serial3
   // List of baud rates (divided by 100) available in WebUI. Feel free to add your custom baud rate (anything between 3 and 2500)
 const uint16_t BAUD_RATES[] = { 3, 6, 9, 12, 24, 48, 96, 192, 384, 576, 1152 };
-#define RS485_CONTROL_PIN 6              // Arduino Pin for RS485 Direction control, disable if you have module with hardware flow control
+//#define RS485_CONTROL_PIN 2              // Arduino Pin for RS485 Direction control, disable if you have module with hardware flow control
 const byte MAX_QUEUE_REQUESTS = 10;      // max number of TCP or UDP requests stored in a queue
 const uint16_t MAX_QUEUE_DATA = 254;     // total length of TCP or UDP requests stored in a queue (in bytes),
                                          // should be at least MODBUS_SIZE - 2 (CRC is not stored in queue)
