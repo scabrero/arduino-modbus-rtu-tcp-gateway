@@ -68,6 +68,11 @@ void startEthernet() {
 
   W5100.setRetransmissionTime(TCP_RETRANSMISSION_TIMEOUT);
   W5100.setRetransmissionCount(TCP_RETRANSMISSION_COUNT);
+#ifdef ETH_SS_PIN
+  pinMode(ETH_SS_PIN, OUTPUT);
+  digitalWrite(ETH_SS_PIN, LOW);
+  W5100.setSS(ETH_SS_PIN);
+#endif
   modbusServer = EthernetServer(data.config.tcpPort);
   webServer = EthernetServer(data.config.webPort);
   Udp.begin(data.config.udpPort);
